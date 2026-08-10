@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(py -3 -c ' *)",
+      "Bash(py -3 -c \"import matplotlib; print\\(matplotlib.__version__\\)\")",
+      "Bash(py -3 report_assets/analyze.py)",
+      "Bash(py -3 report_assets/chart_gen.py)",
+      "Bash(where pandoc *)",
+      "Bash(py -3 -c \"import docx; print\\(docx.__version__\\)\")",
+      "Bash(py -3 -c \"import markdown; print\\(markdown.__version__\\)\")",
+      "Bash(py -3 -m pip install --quiet python-docx)",
+      "Bash(py -3 -c \"import docx; print\\('python-docx', docx.__version__ if hasattr\\(docx,'__version__'\\) else 'ok'\\)\")",
+      "Bash(py -3 report_assets/train_chart_gen.py)",
+      "Bash(py -3 report_assets/build_docx.py)",
+      "Bash(py -3 report_assets/analyze_eval.py)",
+      "Bash(py -3 report_assets/eval_chart_gen.py)",
+      "Bash(py -3 report_assets/build_docx.py \"D:/Dev/sllm_training_v2/evaluation_report.md\" \"D:/Dev/sllm_training_v2/Evaluation_and_Metrics_Report.docx\")",
+      "Bash(py -3 -c \"import numpy\")",
+      "Bash(py -3 -m pip install --quiet numpy)",
+      "Bash(powershell -Command \"Get-Process WINWORD -ErrorAction SilentlyContinue\")",
+      "Bash(python3 -c ' *)",
+      "Bash(python -c ' *)",
+      "PowerShell(Get-Command *)",
+      "PowerShell(py *)",
+      "Bash(diff -u main.py main_v2.py)",
+      "Read(//tmp/**)"
+    ]
+  }
+}

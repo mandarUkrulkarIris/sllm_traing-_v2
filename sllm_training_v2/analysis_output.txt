@@ -1,0 +1,42 @@
+Total records: 6289
+Bad completion JSON: 0
+Bad input JSON parse: 0
+
+Prompt length chars: min/mean/median/max: 443 2841.3622197487675 2218 17648
+Completion length chars: min/mean/median/max: 427 12523.858960089045 8921 86231
+
+Row counts: min/mean/median/max: 1 14.331690252822389 11 104
+Col counts: min/mean/median/max: 1 4.90427730958817 4 37
+
+Top level completion keys: {'rows', '4', 'table_type', '1', 'c', 'r', 'columns', 'cells', '7', '9', '6', 'tt', '2', '5', '3', 'cs', '0'}
+
+Num distinct table_types: 2235
+Top 20 table types:
+    398  other
+    154  income_statement
+    107  None
+    103  property plant and equipment rollforward
+     90  segment information
+     85  cash flow statement
+     75  intangible assets rollforward
+     72  income tax reconciliation
+     65  insurance contract rollforward
+     58  statement of changes in equity
+     55  financial liabilities table
+     53  related party transactions table
+     53  balance_sheet
+     52  financial instruments breakdown
+     52  income_statement_detail
+     48  statement_of_comprehensive_income
+     46  statement_of_changes_in_equity
+     43  financial liabilities maturity analysis
+     41  property, plant and equipment rollforward
+     40  table_of_contents
+
+Row type distribution:
+   54087  data
+   22993  row_header
+    5879  total
+    4182  subtotal
+     869  grand_total
+       5  change

@@ -1,0 +1,38 @@
+# --- Model weights & checkpoints (regenerable via training scripts, too large for plain git) ---
+*.safetensors
+*.bin
+*.gguf
+*.pt
+*.pth
+*.ckpt
+checkpoint-*/
+optimizer.pt
+scheduler.pt
+rng_state.pth
+
+# --- Training datasets (regenerable via dataprep/*.py from the source corpus) ---
+*.jsonl
+
+adapters/
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- OS / editor cruft ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Logs / temp ---
+*.log
+*.tmp

@@ -1,0 +1,1050 @@
+{
+  "n_records": 6109,
+  "concept_meaning_dominance_threshold": 0.6,
+  "counts_of_cells_or_examples_changed": {
+    "table_type_remapped": 420,
+    "concept_id_remapped": 820,
+    "concept_meaning_remapped": 2742,
+    "unit_remapped": 1175,
+    "scale_multiplier_remapped": 64730
+  },
+  "table_type": {
+    "n_unique_before": 2232,
+    "n_unique_after": 2087
+  },
+  "concept_id": {
+    "n_unique_before": 67473,
+    "n_unique_after": 67134
+  },
+  "unit": {
+    "n_unique_before": 210,
+    "n_unique_after": 188,
+    "alias_map_applied": {
+      "percentage": "percent",
+      "EUR_thousand": "thousand EUR",
+      "thousand euro": "thousand EUR"
+    },
+    "flagged_mixed_scale_units_not_auto_fixed": [
+      [
+        "million HUF",
+        322
+      ],
+      [
+        "EUR_thousand",
+        174
+      ],
+      [
+        "thousand euro",
+        172
+      ],
+      [
+        "thousand EUR",
+        99
+      ],
+      [
+        "billion_cubic_meter",
+        57
+      ],
+      [
+        "million_euro",
+        41
+      ],
+      [
+        "HUF million",
+        38
+      ],
+      [
+        "SEK_thousand",
+        32
+      ],
+      [
+        "EUR_million",
+        24
+      ],
+      [
+        "HUF_Million",
+        18
+      ],
+      [
+        "thousand fish",
+        18
+      ],
+      [
+        "million ZAR",
+        17
+      ],
+      [
+        "million EUR",
+        16
+      ],
+      [
+        "thousand smolt",
+        15
+      ],
+      [
+        "thousand_eur",
+        12
+      ],
+      [
+        "billion cubic meter",
+        12
+      ],
+      [
+        "thousand pcs",
+        12
+      ],
+      [
+        "thousand barrels per day",
+        9
+      ],
+      [
+        "million cubic feet per day",
+        9
+      ],
+      [
+        "thousand barrels of oil equivalent per day",
+        9
+      ],
+      [
+        "million_barrel",
+        9
+      ],
+      [
+        "billion_cubic_foot",
+        9
+      ],
+      [
+        "million_barrel_oil_equivalent",
+        9
+      ],
+      [
+        "thousand cubic feet",
+        9
+      ],
+      [
+        "ZAR cent",
+        8
+      ],
+      [
+        "thousand SEK",
+        6
+      ],
+      [
+        "ZAR_cent",
+        4
+      ],
+      [
+        "billion cubic meter per year",
+        4
+      ],
+      [
+        "euro_thousand",
+        2
+      ],
+      [
+        "million USD",
+        2
+      ],
+      [
+        "megawatt_hour_per_million_euro",
+        2
+      ],
+      [
+        "million GBP",
+        1
+      ]
+    ]
+  },
+  "scale_multiplier": {
+    "n_unique_before": null,
+    "n_unique_after": 10,
+    "values_after": [
+      [
+        "1000",
+        68676
+      ],
+      [
+        "1000000",
+        52837
+      ],
+      [
+        "1",
+        48643
+      ],
+      [
+        "0.01",
+        1021
+      ],
+      [
+        "1000000000",
+        285
+      ],
+      [
+        "100",
+        10
+      ],
+      [
+        "0.015",
+        1
+      ],
+      [
+        "0.04",
+        1
+      ],
+      [
+        "0.09",
+        1
+      ],
+      [
+        "0.12",
+        1
+      ]
+    ]
+  },
+  "concept_meaning": {
+    "n_concept_ids_canonicalized": 1676,
+    "n_concept_ids_left_ambiguous": 17211,
+    "top_ambiguous_concept_ids": [
+      {
+        "concept_id": "Total",
+        "n_variants": 365,
+        "total_occurrences": 579,
+        "top_variant_share": 0.027633851468048358,
+        "top_meanings": [
+          [
+            "The amount represents the total value of all property, plant, and equipment categories listed above.",
+            16
+          ],
+          [
+            "The total equity attributable to shareholders as of the reporting date.",
+            12
+          ],
+          [
+            "The total amount of loans, receivables, and related exposures as of the reporting date.",
+            10
+          ],
+          [
+            "The total carrying amount of all reported financial assets as of the reporting date.",
+            5
+          ],
+          [
+            "Total contractual cash outflows for all financial liabilities as of December 31, 2025, by maturity bucket.",
+            5
+          ]
+        ]
+      },
+      {
+        "concept_id": "ShareCapital",
+        "n_variants": 111,
+        "total_occurrences": 441,
+        "top_variant_share": 0.17913832199546487,
+        "top_meanings": [
+          [
+            "The amount of share capital for the subsidiary or investment entity.",
+            79
+          ],
+          [
+            "The total share capital of the investee as of the reporting date.",
+            58
+          ],
+          [
+            "The amount of share capital issued by the subsidiary or investment entity.",
+            30
+          ],
+          [
+            "The amount of share capital for the subsidiary.",
+            28
+          ],
+          [
+            "The amount of share capital contributed or held by the entity in the subsidiary or associate.",
+            24
+          ]
+        ]
+      },
+      {
+        "concept_id": "TotalEquity",
+        "n_variants": 222,
+        "total_occurrences": 413,
+        "top_variant_share": 0.0387409200968523,
+        "top_meanings": [
+          [
+            "The total equity of the company, representing the sum of capital, share premiums, reserves, and retained earnings.",
+            16
+          ],
+          [
+            "Total equity at the end of the period, representing the sum of all equity components.",
+            16
+          ],
+          [
+            "The total equity attributable to shareholders at the reporting date.",
+            13
+          ],
+          [
+            "The total equity attributable to shareholders of the entity.",
+            12
+          ],
+          [
+            "Total equity held by the segment as of the reporting date.",
+            12
+          ]
+        ]
+      },
+      {
+        "concept_id": "CashAndCashEquivalents",
+        "n_variants": 164,
+        "total_occurrences": 393,
+        "top_variant_share": 0.035623409669211195,
+        "top_meanings": [
+          [
+            "Cash and cash equivalents represent liquid financial assets available for immediate use by the entity.",
+            14
+          ],
+          [
+            "The amount of cash and cash equivalents held by the group as of the reporting date.",
+            12
+          ],
+          [
+            "The amount of cash and cash equivalents held by the entity as of the reporting date.",
+            11
+          ],
+          [
+            "Cash and cash equivalents held by the segment as of the reporting date.",
+            11
+          ],
+          [
+            "The carrying amount of cash and cash equivalents as of the reporting date.",
+            10
+          ]
+        ]
+      },
+      {
+        "concept_id": "OwnershipPercentage",
+        "n_variants": 10,
+        "total_occurrences": 348,
+        "top_variant_share": 0.13793103448275862,
+        "top_meanings": [
+          [
+            "The percentage of ownership held by the specified shareholder in the company.",
+            48
+          ],
+          [
+            "The percentage of ownership held by the listed shareholder in the subsidiary company.",
+            47
+          ],
+          [
+            "The percentage of ownership interest held in the subsidiary by the parent company.",
+            46
+          ],
+          [
+            "The percentage of ownership interest held by the shareholder in the subsidiary company.",
+            39
+          ],
+          [
+            "The percentage of ownership held in the subsidiary by the reporting entity.",
+            37
+          ]
+        ]
+      },
+      {
+        "concept_id": "NettoBalansPer31December",
+        "n_variants": 32,
+        "total_occurrences": 246,
+        "top_variant_share": 0.11382113821138211,
+        "top_meanings": [
+          [
+            "The net balance of insurance contracts as of December 31.",
+            28
+          ],
+          [
+            "The net balance of insurance contracts as of December 31, representing the closing position for the period.",
+            24
+          ],
+          [
+            "The net balance of insurance contracts as of December 31st, representing the closing position for the period.",
+            20
+          ],
+          [
+            "The net balance of insurance contracts as of December 31, 2025.",
+            14
+          ],
+          [
+            "Net balance of insurance contracts as of December 31, representing the closing position for the period.",
+            12
+          ]
+        ]
+      },
+      {
+        "concept_id": "Totale",
+        "n_variants": 174,
+        "total_occurrences": 245,
+        "top_variant_share": 0.04081632653061224,
+        "top_meanings": [
+          [
+            "Net total of deferred tax assets and liabilities recognized as of the reporting date.",
+            10
+          ],
+          [
+            "The total expense for employee defined benefit plans for the year 2025.",
+            6
+          ],
+          [
+            "The total expense for employee defined benefit plans for the year 2024.",
+            6
+          ],
+          [
+            "Total current liabilities as of the reporting date.",
+            4
+          ],
+          [
+            "The total carrying amount of all financial assets as of December 31, 2025.",
+            2
+          ]
+        ]
+      },
+      {
+        "concept_id": "TotalAssets",
+        "n_variants": 107,
+        "total_occurrences": 233,
+        "top_variant_share": 0.05150214592274678,
+        "top_meanings": [
+          [
+            "Total assets held by the segment as of the reporting date.",
+            12
+          ],
+          [
+            "The total value of all assets, both current and non-current, held by the entity as of the reporting date.",
+            8
+          ],
+          [
+            "Sum of all assets held by the segment or group, representing the total resources owned.",
+            7
+          ],
+          [
+            "The total carrying amount of all assets owned by the company at the end of the reporting period.",
+            6
+          ],
+          [
+            "Total assets represent the sum of all assets recognized by the entity as of the reporting date.",
+            6
+          ]
+        ]
+      },
+      {
+        "concept_id": "FinanceCosts",
+        "n_variants": 81,
+        "total_occurrences": 229,
+        "top_variant_share": 0.056768558951965066,
+        "top_meanings": [
+          [
+            "Interest and other costs incurred in connection with borrowing funds during the reporting period.",
+            13
+          ],
+          [
+            "The finance costs incurred during the period.",
+            10
+          ],
+          [
+            "Interest and other costs incurred by the company in connection with borrowing funds during the reporting period.",
+            8
+          ],
+          [
+            "The interest and other costs incurred by the company in connection with the borrowing of funds.",
+            6
+          ],
+          [
+            "Represents the total finance costs incurred during the reporting period.",
+            6
+          ]
+        ]
+      },
+      {
+        "concept_id": "TradePayables",
+        "n_variants": 105,
+        "total_occurrences": 223,
+        "top_variant_share": 0.06278026905829596,
+        "top_meanings": [
+          [
+            "The amount owed to suppliers for goods and services received but not yet paid as of the reporting date.",
+            14
+          ],
+          [
+            "Amounts owed to suppliers for goods and services received but not yet paid as of the reporting date.",
+            14
+          ],
+          [
+            "The amount owed to suppliers for goods and services received but not yet paid for at the reporting date.",
+            10
+          ],
+          [
+            "Amounts owed to suppliers for goods and services received but not yet paid for at the reporting date.",
+            7
+          ],
+          [
+            "Amounts owed by the segment or group to suppliers for goods or services received but not yet paid for.",
+            7
+          ]
+        ]
+      },
+      {
+        "concept_id": "Revenue",
+        "n_variants": 67,
+        "total_occurrences": 222,
+        "top_variant_share": 0.0990990990990991,
+        "top_meanings": [
+          [
+            "The total income generated from the company's primary business activities during the reporting period.",
+            22
+          ],
+          [
+            "The amount of income earned from the sale of goods or services during the reporting period before any costs or expenses are deducted.",
+            15
+          ],
+          [
+            "The total income generated from the company's main business activities during the reporting period.",
+            14
+          ],
+          [
+            "Revenue represents the total income earned from the sale of goods or services during the reporting period.",
+            14
+          ],
+          [
+            "The amount of income earned from the company's main operating activities during the reporting period.",
+            12
+          ]
+        ]
+      },
+      {
+        "concept_id": "LeaseLiabilities",
+        "n_variants": 135,
+        "total_occurrences": 214,
+        "top_variant_share": 0.037383177570093455,
+        "top_meanings": [
+          [
+            "The amount represents the fair value of financial liabilities associated with rights of use (lease liabilities) as of the reporting date.",
+            8
+          ],
+          [
+            "The amount of deferred tax assets or liabilities related to lease liabilities as of the reporting date.",
+            6
+          ],
+          [
+            "Amount of deferred tax asset or liability arising from lease liabilities.",
+            6
+          ],
+          [
+            "The carrying amount of lease liabilities outstanding at the end of the reporting period.",
+            6
+          ],
+          [
+            "The present value of future lease payments recognized as a liability under lease contracts.",
+            5
+          ]
+        ]
+      },
+      {
+        "concept_id": "OtherIncome",
+        "n_variants": 101,
+        "total_occurrences": 209,
+        "top_variant_share": 0.0861244019138756,
+        "top_meanings": [
+          [
+            "Other income earned by the segment during the reporting period.",
+            18
+          ],
+          [
+            "Income earned from sources other than the company's main business activities during the reporting period.",
+            10
+          ],
+          [
+            "Income earned from sources other than the main business operations during the reporting period.",
+            8
+          ],
+          [
+            "Other income earned by the segment not classified elsewhere.",
+            6
+          ],
+          [
+            "Income earned by the company from sources other than its main business operations.",
+            5
+          ]
+        ]
+      },
+      {
+        "concept_id": "ProfitForTheYear",
+        "n_variants": 94,
+        "total_occurrences": 203,
+        "top_variant_share": 0.03940886699507389,
+        "top_meanings": [
+          [
+            "Represents the profit attributable to the reporting period after tax.",
+            8
+          ],
+          [
+            "The company's net profit after income tax for the reporting period.",
+            6
+          ],
+          [
+            "The net profit attributable to the company for the reporting period after all expenses and taxes.",
+            5
+          ],
+          [
+            "Net profit earned by the segment for the year after tax.",
+            5
+          ],
+          [
+            "The profit for the year attributable to equity holders of Eni.",
+            5
+          ]
+        ]
+      },
+      {
+        "concept_id": "Taxation",
+        "n_variants": 57,
+        "total_occurrences": 180,
+        "top_variant_share": 0.14444444444444443,
+        "top_meanings": [
+          [
+            "The amount of income tax expense or benefit recognized for the reporting period.",
+            26
+          ],
+          [
+            "The amount of income tax expense recognized for the reporting period.",
+            10
+          ],
+          [
+            "Represents the total taxation expense for the reporting period.",
+            8
+          ],
+          [
+            "The total amount of income tax expense recognized for the reporting period.",
+            8
+          ],
+          [
+            "The amount of income tax expense or benefit for the reporting period.",
+            8
+          ]
+        ]
+      },
+      {
+        "concept_id": "OperatingExpenses",
+        "n_variants": 77,
+        "total_occurrences": 179,
+        "top_variant_share": 0.1005586592178771,
+        "top_meanings": [
+          [
+            "The total operating expenses incurred by the segment during the reporting period.",
+            18
+          ],
+          [
+            "Operating expenses represent the costs incurred in the normal course of business operations, excluding cost of sales.",
+            6
+          ],
+          [
+            "The expenses incurred during normal business operations, excluding cost of sales.",
+            5
+          ],
+          [
+            "Total operating expenses for the segment, including credit losses, provisions, and administrative costs.",
+            5
+          ],
+          [
+            "Total operating expenses incurred by the segment during the period, aggregating personnel, depreciation, and other operating expenses.",
+            5
+          ]
+        ]
+      },
+      {
+        "concept_id": "Provisions",
+        "n_variants": 93,
+        "total_occurrences": 179,
+        "top_variant_share": 0.1005586592178771,
+        "top_meanings": [
+          [
+            "Provisions held by the segment as of the reporting date.",
+            18
+          ],
+          [
+            "The expense or reversal of provisions recognized for the period.",
+            6
+          ],
+          [
+            "The estimated amount set aside to cover future obligations or liabilities of uncertain timing or amount.",
+            5
+          ],
+          [
+            "The carrying amount of provisions as of the reporting date.",
+            5
+          ],
+          [
+            "The amount represents provisions recognized for expected liabilities or obligations as of the reporting date.",
+            4
+          ]
+        ]
+      },
+      {
+        "concept_id": "Equity",
+        "n_variants": 33,
+        "total_occurrences": 174,
+        "top_variant_share": 0.3333333333333333,
+        "top_meanings": [
+          [
+            "The total equity of the investee as of the reporting date.",
+            58
+          ],
+          [
+            "The amount of equity attributable to the subsidiary as of December 31, 2024.",
+            23
+          ],
+          [
+            "The amount of equity attributable to the subsidiary as of the reporting date.",
+            22
+          ],
+          [
+            "Equity attributable to shareholders of the parent held by the segment as of the reporting date.",
+            7
+          ],
+          [
+            "The value of equity attributable to the entity at the reporting date.",
+            6
+          ]
+        ]
+      },
+      {
+        "concept_id": "TradeAndOtherPayables",
+        "n_variants": 83,
+        "total_occurrences": 173,
+        "top_variant_share": 0.06936416184971098,
+        "top_meanings": [
+          [
+            "The change in trade and other payables during the period.",
+            12
+          ],
+          [
+            "The amount of trade and other payables denominated in the specified foreign currency.",
+            12
+          ],
+          [
+            "The movement in trade and other payables during the period.",
+            6
+          ],
+          [
+            "The amount owed to suppliers and other creditors for goods and services received but not yet paid, classified as a financial liability.",
+            5
+          ],
+          [
+            "Trade and other payables held by the group or company at the reporting date.",
+            5
+          ]
+        ]
+      },
+      {
+        "concept_id": "SharePremium",
+        "n_variants": 88,
+        "total_occurrences": 170,
+        "top_variant_share": 0.07647058823529412,
+        "top_meanings": [
+          [
+            "The amount received in excess of the par value of shares issued by the company.",
+            13
+          ],
+          [
+            "The amount received by the company over and above the nominal value of shares issued, recorded as share premium.",
+            11
+          ],
+          [
+            "The amount of share premium received by the entity in excess of par value.",
+            8
+          ],
+          [
+            "Share premium received by the group or company at the reporting date.",
+            5
+          ],
+          [
+            "The amount of share premium paid by shareholders above the nominal value of shares.",
+            5
+          ]
+        ]
+      },
+      {
+        "concept_id": "RetainedEarnings",
+        "n_variants": 100,
+        "total_occurrences": 169,
+        "top_variant_share": 0.029585798816568046,
+        "top_meanings": [
+          [
+            "The amount of retained earnings at the end of the reporting period.",
+            5
+          ],
+          [
+            "Retained earnings represent accumulated profits not distributed as dividends.",
+            5
+          ],
+          [
+            "The cumulative amount of net earnings retained in the bank rather than distributed as dividends as of the reporting date.",
+            5
+          ],
+          [
+            "The amount of retained earnings as of the reporting date.",
+            3
+          ],
+          [
+            "The accumulated profits retained in the business after dividends are paid.",
+            3
+          ]
+        ]
+      },
+      {
+        "concept_id": "Depreciation",
+        "n_variants": 75,
+        "total_occurrences": 168,
+        "top_variant_share": 0.047619047619047616,
+        "top_meanings": [
+          [
+            "The depreciation expense recognized for the asset category during the financial year.",
+            8
+          ],
+          [
+            "The depreciation expense recognized during the reporting period.",
+            8
+          ],
+          [
+            "The depreciation expense charged against the specified property and equipment asset during the reporting period.",
+            6
+          ],
+          [
+            "Depreciation expense recognized by the segment for its assets.",
+            5
+          ],
+          [
+            "The amount represents depreciation expenses incurred during the reporting period.",
+            5
+          ]
+        ]
+      },
+      {
+        "concept_id": "Totaal",
+        "n_variants": 103,
+        "total_occurrences": 164,
+        "top_variant_share": 0.036585365853658534,
+        "top_meanings": [
+          [
+            "The total amount of borrowings and lease liabilities outstanding at the end of the reporting period.",
+            6
+          ],
+          [
+            "This amount represents the total of all costs and contributions for the period.",
+            3
+          ],
+          [
+            "The amount represents the total financial assets measured at fair value as of the reporting date.",
+            2
+          ],
+          [
+            "The amount represents the total value of short-term investments, cash, and cash equivalents as of the reporting date.",
+            2
+          ],
+          [
+            "Represents the total value of all assets reported on the balance sheet.",
+            2
+          ]
+        ]
+      },
+      {
+        "concept_id": "CurrentLiabilities",
+        "n_variants": 63,
+        "total_occurrences": 159,
+        "top_variant_share": 0.14465408805031446,
+        "top_meanings": [
+          [
+            "The amount of current liabilities owed by the subsidiary as of December 31, 2024.",
+            23
+          ],
+          [
+            "The amount of current liabilities owed by the subsidiary as of the reporting date.",
+            22
+          ],
+          [
+            "The total value of obligations expected to be settled within one year for the subsidiary.",
+            5
+          ],
+          [
+            "The amount of current liabilities owed, representing obligations due within one year.",
+            4
+          ],
+          [
+            "The total obligations expected to be settled within one year.",
+            4
+          ]
+        ]
+      },
+      {
+        "concept_id": "CurrentAssets",
+        "n_variants": 63,
+        "total_occurrences": 157,
+        "top_variant_share": 0.1464968152866242,
+        "top_meanings": [
+          [
+            "The amount of current assets held by the subsidiary as of December 31, 2024.",
+            23
+          ],
+          [
+            "The amount of current assets held by the subsidiary as of the reporting date.",
+            22
+          ],
+          [
+            "The total value of assets expected to be converted into cash or used up within one year.",
+            6
+          ],
+          [
+            "The total value of assets expected to be converted into cash or used up within one year for the subsidiary.",
+            5
+          ],
+          [
+            "The amount of current assets held, representing resources expected to be converted to cash or used within one year.",
+            4
+          ]
+        ]
+      },
+      {
+        "concept_id": "ProfitBeforeTaxation",
+        "n_variants": 56,
+        "total_occurrences": 157,
+        "top_variant_share": 0.06369426751592357,
+        "top_meanings": [
+          [
+            "The profit before taxation for the period.",
+            10
+          ],
+          [
+            "The profit earned before deducting taxation for the reporting period.",
+            10
+          ],
+          [
+            "Profit earned before deducting taxation for the reporting period.",
+            8
+          ],
+          [
+            "The profit earned by the company before deducting taxation for the reporting period.",
+            6
+          ],
+          [
+            "The profit earned by the company before deducting income tax for the reporting period.",
+            6
+          ]
+        ]
+      },
+      {
+        "concept_id": "GrossProfit",
+        "n_variants": 45,
+        "total_occurrences": 153,
+        "top_variant_share": 0.24183006535947713,
+        "top_meanings": [
+          [
+            "The profit earned after deducting the cost of sales from revenue for the reporting period.",
+            37
+          ],
+          [
+            "The profit earned after deducting cost of sales from revenue for the reporting period.",
+            18
+          ],
+          [
+            "Gross profit represents the difference between revenue and cost of sales, indicating the profit earned before operating expenses.",
+            10
+          ],
+          [
+            "The profit a company makes after deducting the costs associated with making and selling its products or providing its services.",
+            5
+          ],
+          [
+            "The profit after deducting cost of sales from revenue for the reporting period.",
+            4
+          ]
+        ]
+      },
+      {
+        "concept_id": "IncomeTaxExpense",
+        "n_variants": 63,
+        "total_occurrences": 150,
+        "top_variant_share": 0.08666666666666667,
+        "top_meanings": [
+          [
+            "The amount of income tax expense recognized for the reporting period.",
+            13
+          ],
+          [
+            "The total income tax expense recognized for the reporting period.",
+            10
+          ],
+          [
+            "Income tax expense recognized for the period.",
+            10
+          ],
+          [
+            "The amount of income tax expense recognized during the period.",
+            6
+          ],
+          [
+            "Income tax expense incurred by the segment for the reporting period.",
+            6
+          ]
+        ]
+      },
+      {
+        "concept_id": "FinanceIncome",
+        "n_variants": 64,
+        "total_occurrences": 148,
+        "top_variant_share": 0.06756756756756757,
+        "top_meanings": [
+          [
+            "The income earned from the company's financial assets and investments during the reporting period.",
+            10
+          ],
+          [
+            "Finance income for the segment during the reporting period.",
+            7
+          ],
+          [
+            "Income earned from the company's investments and cash balances, such as interest received.",
+            5
+          ],
+          [
+            "Interest and similar income earned during the reporting period.",
+            4
+          ],
+          [
+            "Represents the income earned from financial assets during the reporting period.",
+            4
+          ]
+        ]
+      },
+      {
+        "concept_id": "IntangibleAssets",
+        "n_variants": 55,
+        "total_occurrences": 144,
+        "top_variant_share": 0.041666666666666664,
+        "top_meanings": [
+          [
+            "Amount of deferred tax asset or liability arising from intangible assets.",
+            6
+          ],
+          [
+            "The value of intangible assets held by the company as of the reporting date.",
+            6
+          ],
+          [
+            "The carrying amount of intangible assets recognized by the group as of the reporting date.",
+            6
+          ],
+          [
+            "The carrying amount of intangible assets held by the group as of the reporting date.",
+            6
+          ],
+          [
+            "The amount of intangible assets acquired for the specified subsidiary at acquisition date.",
+            6
+          ]
+        ]
+      }
+    ]
+  }
+}

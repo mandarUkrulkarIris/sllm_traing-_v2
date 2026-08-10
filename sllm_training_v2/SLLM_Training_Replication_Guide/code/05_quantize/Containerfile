@@ -1,0 +1,24 @@
+FROM ubuntu:24.04
+
+# 1. Install all dependencies in a single stage
+RUN apt-get update && apt-get install -y \
+    build-essential cmake git python3 python3-pip python3-venv libgomp1 \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+# 2. Clone the repository
+RUN git clone https://github.com/ggerganov/llama.cpp.git .
+
+# 3. Compile everything (binaries and shared libraries stay safely together)
+RUN cmake -B build -DCMAKE_BUILD_TYPE=Release \
+    && cmake --build build --config Release -j$(nproc)
+
+# 4. Set up Python environment
+RUN python3 -m venv /opt/venv
+ENV PATH="/opt/venv/bin:$PATH"
+RUN pip3 install --no-cache-dir -r requirements.txt
+
+# 5. Add the build folder to PATH so you can just call the commands directly
+ENV PATH="/app/build/bin:$PATH"
+ENV PYTHONPATH="/app:$PYTHONPATH"
