@@ -1,5 +1,11 @@
+import gc
 import math
 import os
+
+# Must be set before CUDA is initialized (i.e. before `import torch`) to take effect.
+# Reduces the fragmentation that caused the OOM (large reserved-but-unallocated blocks).
+os.environ.setdefault("PYTORCH_CUDA_ALLOC_CONF", "expandable_segments:True")
+
 import torch
 from datasets import load_dataset
 from transformers import (
@@ -163,7 +169,7 @@ def compute_metrics(eval_pred):
 # ==========================================
 # 5. TRAINING ARGS
 # ==========================================
-EFFECTIVE_BATCH = 3 * 16
+EFFECTIVE_BATCH = 2 * 24
 steps_per_epoch = math.ceil(len(tokenized_train) / EFFECTIVE_BATCH)
 eval_steps = max(10, steps_per_epoch // 3)
 
@@ -171,9 +177,9 @@ training_args = TrainingArguments(
     output_dir=CHECKPOINT_DIR,
 
     num_train_epochs=3,
-    per_device_train_batch_size=3,
+    per_device_train_batch_size=2,
     per_device_eval_batch_size=4,
-    gradient_accumulation_steps=16,
+    gradient_accumulation_steps=24,
 
     learning_rate=5e-5,
     lr_scheduler_type="cosine",
@@ -208,7 +214,20 @@ training_args = TrainingArguments(
     seed=SEED,
 )
 
-trainer = Trainer(
+class MemoryEfficientTrainer(Trainer):
+    """Clears the CUDA allocator cache around eval so leftover eval-phase
+    reservations don't fragment the pool the next training step allocates into."""
+
+    def evaluate(self, *args, **kwargs):
+        gc.collect()
+        torch.cuda.empty_cache()
+        metrics = super().evaluate(*args, **kwargs)
+        gc.collect()
+        torch.cuda.empty_cache()
+        return metrics
+
+
+trainer = MemoryEfficientTrainer(
     model=model,
     args=training_args,
     train_dataset=tokenized_train,
