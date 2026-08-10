@@ -174,7 +174,6 @@ training_args = TrainingArguments(
     per_device_train_batch_size=3,
     per_device_eval_batch_size=4,
     gradient_accumulation_steps=16,
-    group_by_length=True,
 
     learning_rate=5e-5,
     lr_scheduler_type="cosine",
