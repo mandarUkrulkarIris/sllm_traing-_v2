@@ -6,9 +6,9 @@ from peft import PeftModel
 # ==========================================
 # CONFIGURATION
 # ==========================================
-BASE_MODEL_ID = "Qwen/Qwen3.5-4B"
-LORA_MODEL_PATH = "teamspace_uploads_Qwen3.5-4B_v16v2_clean_dataset_220726_3epochs"      
-MERGED_OUTPUT_DIR = "Merged_Qwen3.5-4B_v16v2_clean_dataset_220726_3epochs"   
+BASE_MODEL_ID = "Qwen/Qwen3.5-9B"
+LORA_MODEL_PATH = r"D:\Dev\sllm_training_v2_gitrepo\sllm_traing-_v2\sllm_training_v2\adapters\Qwen3.5-9B_v16v2_clean_dataset_220726_v3"
+MERGED_OUTPUT_DIR = r"D:\Dev\sllm_training_v2_gitrepo\sllm_traing-_v2\sllm_training_v2\adapters\Merged_Qwen3.5-9B_v16v2_clean_dataset_220726_v3"
 
 # ==========================================
 # EXECUTION
